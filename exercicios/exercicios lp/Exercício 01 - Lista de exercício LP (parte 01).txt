@@ -1,0 +1,137 @@
+1) Escreva um algoritmo que armazene o valor 10 em uma variável A e o valor 20 em uma variável B.
+A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o
+valor que está em A passe para B e vice-versa. Ao final, escrever os valores que ficaram armazenados
+nas variáveis. 
+
+algoritmo "semnome"
+var
+ a,b:inteiro
+inicio
+a<- 10
+b<- 20
+escreval("A =", a)
+escreval("B =", b)
+escreval("")
+// 10 + 20 = 30
+// 30 - 20 = 10
+// 30 - 10 = 20
+
+a <- a + b
+b <- a - b
+a <- a - b
+
+escreval("A =", a)
+escreval("B =", b)
+
+Fimalgoritmo
+
+2)Analise os algoritmos abaixo e diga o que será impresso na tela ao serem executados:
+A)
+algoritmo "semnome"
+var
+a,b:inteiro
+inicio
+a <- 10
+b <- 20
+escreval("B =", b)
+b <- 5
+escreval("A =", a)
+escreval("B =", b)
+Fimalgoritmo
+
+B)
+algoritmo "semnome"
+var
+a,b,c:inteiro
+inicio
+a <- 30
+b <- 20
+c <- a + b
+escreval("C =", c)
+
+b <- 10
+escreval("B =", b)
+escreval("C =", c)
+
+c <- a + b
+escreval("A =", a)
+escreval("B =", b)
+escreval("C =", c)
+
+fimalgoritmo
+
+C)
+inicio
+a <- 10
+b <- 20
+c <- a
+a <- b
+//a <- 10
+//b <- 20
+//c <- 10
+//a <- 20
+escreval("A = ", a)
+escreval("B = ", b)
+escreval("C = ", c)
+fimalgoritmo
+D)
+algoritmo "semnome"
+var
+a,b:inteiro
+inicio
+a <- 10
+b <- a + 1
+a <- b + 1
+b <- a + 1
+//a <- 10
+//b <- 10 + 1
+//a <- 11 + 1
+//b <- 12 + 1
+  escreval("A =", a)
+a <- b + 1
+//a <- 13 + 1
+  escreval("A =", a)
+  escreval("B =", b)
+Fimalgoritmo
+
+E)
+algoritmo "semnome"
+var
+a,b,c:inteiro
+inicio
+a <- 10
+b <- 5
+c <- a + b
+
+b <- 20
+a <- 10
+escreval("A =", a)
+escreval("B =", b)
+escreval("C =", c)
+fimalgoritmo
+F )
+algoritmo "semnome"
+var
+x,y,z: inteiro
+inicio
+x <- 1
+y <- 2
+z <- y - x
+//z <- 1 + 2
+escreval("z =",z)
+x <- 5
+y <- x + z
+escreval("X =",x)
+escreval("Y =",y)
+escreval("Z =",z)
+Fimalgoritmo
+
+Exercícios 3 ao 11 utilizar Operadores Aritméticos (ver capítulo 5) 
+
+A)Sim
+B)Não
+C)Não
+
+4) Reescreva as instruções abaixo com o mínimo de parênteses possível, mas sem alterar o
+resultado:
+ 
