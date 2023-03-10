@@ -339,3 +339,49 @@ fimse
 fimalgoritmo
 
 Exercícios 14 ao 26 utilizar estrutura de Seleção e Operadores Relacionais (ver capítulos 8 e 9)
+
+14) Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso
+contrário escrever NÃO É MAIOR QUE 10!
+R)
+algoritmo "semnome"
+var
+ valor:inteiro
+inicio
+escreval("-----------------")
+escreval("   Maior que 10  ")
+escreval("-----------------")
+escreval("Digite um valor: ")
+leia(valor)
+se valor > 10 entao
+ escreval(" É maior que 10 ")
+ senao
+ escreval(" Não é maior que 10 ")
+fimse
+fimalgoritmo
+
+15) Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo).
+R)
+algoritmo "semnome"
+var
+  valor: inteiro
+inicio
+  escreval("-----------------")
+  escreval("Positivo Negativo")
+  escreval("-----------------")
+  escreval("Digite um valor: ")
+  leia(valor)
+    se (valor % 2) = 0 entao
+     escreval(" Valor Positivo! ")
+    senao
+     escreval("Valor Negativo! ")
+    fimse
+fimalgoritmo
+
+16) As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+escreva o custo total da compra.
+
+
+
+
+
