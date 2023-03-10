@@ -134,6 +134,7 @@ C)Não
 
 4) Reescreva as instruções abaixo com o mínimo de parênteses possível, mas sem alterar o
 resultado:
+
 A)<- 6*5
 B)<- 2+(6*5)
 C)2+(3*6)/5
@@ -146,7 +147,7 @@ I)(10*8+3)*9
 J)(-12)*(-4)+(3*-4)
 
 5)Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor. 
-
+R)
 algoritmo "AntecessorSucessor"
 var
 N, ant, suc:inteiro
@@ -161,7 +162,7 @@ fimalgoritmo
 
 6) Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), calcular e escrever a
 área do retângulo.
-
+R)
 algoritmo "semnome"
 var
 base,altura,area:real
@@ -175,7 +176,7 @@ area <- base * altura
 fimalgoritmo
 
 7) Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
-
+R)
 algoritmo "semnome"
 var
 anos,meses,dias,diasTotal: real
@@ -196,17 +197,40 @@ fimalgoritmo
 8) Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos
 brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total
 de eleitores.
-
-
-
-
-
-
+R)
+algoritmo "semnome"
+var
+   qtdEleitores,votosbrancos,votosNulos,votosValido:real
+inicio
+qtdEleitores <-  votosbrancos + votosNulos + votosValido
+  escreval("Digite os votos brancos: ")
+  leia(votosbrancos)
+  escreval("Digite os votos nulos: ")
+  leia(votosNulos)
+  escreval("Digite os votos validos: ")
+  leia(votosValido)
+  votosbrancos <- (votosbrancos/qtdEleitores)*100
+  votosNulos <- (votosNulos/qtdEleitores)*100
+  votosValido <- (votosValido/qtdEleitores)*100
+   se votosbrancos >0 entao
+      escreval("votosbrancos são: ", votosbrancos)
+      escreval("a porcentagem de votosbrancos é:  ", votosbrancos)
+   senao
+   se votosNulos >0 entao
+      escreval("votosNulos são: ", votosNulos)
+      escreval("a porcentagem de votosNulos é:  ", votosNulos)
+   senao
+   se votosValido >0 entao
+      escreval("votosValido são: ", votosValido)
+      escreval("a porcentagem de votosValido é:  ", votosValido)
+    fimse
+      escreval("A quantidade de qtdEleitores é:  ", qtdEleitores)
+fimalgoritmo
 
 
 9) Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
 Calcular e escrever o valor do novo salário.
-
+R)
 algoritmo "semnome"
 var
    salario: real
@@ -222,11 +246,45 @@ fimalgoritmo
 distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor
 seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
 calcular e escrever o custo final ao consumidor.
+R)
+algoritmo "semnome"
+ custoFabric :real
+ porcentialDistribuidor :real
+ custoFinalImpostos :real
+ valorTotalCarro :real
+ impostos :real
+inicio
+  escreval("Digite o custo de fábrica do carro: ")
+  leia(custoFabrica)
+porcentialDistribuidor <- (custoFabrica * 28)/100
+impostos <- (custoFabrica * 45)/100
+custoFinalImpostos <-  porcentialDistribuidor + impostos
+valorTotalCarro <- custoFabrica + custoFinalImpostos
+  escreval("O custo total de fabrica é: ", custoFabrica)
+  escreval("O valor dos impostos é: ",custoFinalImpostos)
+  escreval("O valor total com impostos é ", valorTotalCarro)
+fimalgoritmo
+
 11) Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,
 mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele
 efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas
 vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do
 vendedor.
+R)
+var
+qtdVenda,bonus,valorVenda,salariofuncionario,salarioFinal: real
+inicio
+  escreval("Digite a quantidade de carros vendidos: ")
+  leia(qtdVenda)
+  escreval("Digite o valor da venda: ")
+  leia(valorVenda)
+salariofuncionario <- 1000
+valorVenda <-  qtdVenda * valorVenda
+bonus <- (valorVenda * 5)/100
+salarioFinal <- salariofuncionario + bonus
+  escreval("A quntidade de venda foi: ", qtdVenda)
+  escreval("Seu salario final foi: R$ ", salarioFinal)
+fimalgoritmo
 
 Exercícios 12 e 13 utilizar Horizontalização (ver capítulo 7)
 
@@ -240,7 +298,32 @@ Observação: Para testar se a sua resposta está correta saiba que 100oC = 212F
 Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média
 final é:
 n1 * 2 + n2 * 3 + n3 * 5
-mediafinal = -----------------------------------
-10
+________________________
+	  10
+R)
+algoritmo "CauculoMediaAluno"
+var
+nota1, nota2, nota3, media: real
+inicio
+escreval(" digite a primeira nota: ")
+leia(nota1)
+escreval(" digite a segunda nota: ")
+leia(nota2)
+escreval(" digite a terceira nota: ")
+leia(nota3)
+media <- (nota1*2)+(nota3*2)+(nota3*5)/10
+escreval(" a media é: ", media)
+se media > 5 entao
+   escreval(" Voce está Aprovado ")
+senao
+   se media <5 entao
+      escreva(" Voce está reprovado ")
+   senao
+      se media =5 entao
+         escreva(" Voce está de recuperação ")
+      fimse
+   fimse
+fimse
+fimalgoritmo
 
 Exercícios 14 ao 26 utilizar estrutura de Seleção e Operadores Relacionais (ver capítulos 8 e 9)
