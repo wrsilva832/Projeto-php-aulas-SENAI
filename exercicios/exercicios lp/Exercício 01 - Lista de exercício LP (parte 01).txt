@@ -248,6 +248,7 @@ seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fáb
 calcular e escrever o custo final ao consumidor.
 R)
 algoritmo "semnome"
+var
  custoFabric :real
  porcentialDistribuidor :real
  custoFinalImpostos :real
@@ -260,9 +261,9 @@ porcentialDistribuidor <- (custoFabrica * 28)/100
 impostos <- (custoFabrica * 45)/100
 custoFinalImpostos <-  porcentialDistribuidor + impostos
 valorTotalCarro <- custoFabrica + custoFinalImpostos
-  escreval("O custo total de fabrica é: ", custoFabrica)
-  escreval("O valor dos impostos é: ",custoFinalImpostos)
-  escreval("O valor total com impostos é ", valorTotalCarro)
+  escreval("O custo total de fabrica é R$ ", custoFabrica)
+  escreval("O valor dos impostos é R$ ",custoFinalImpostos)
+  escreval("O valor total com impostos é RS ", valorTotalCarro)
 fimalgoritmo
 
 11) Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,
