@@ -291,10 +291,21 @@ Exercícios 12 e 13 utilizar Horizontalização (ver capítulo 7)
 
 12) Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor
 correspondente em graus Celsius (baseado na fórmula abaixo):
-C F - 32
----------- = -----------
-5 9
+C	F -32
+___     _____
+5         9
+R)
+algoritmo "semnome"
+var
+C,far: real
+inicio
+escreval("Digite o valor em graus celcius: ")
+leia(C)
+far <- (9*c/5) + 32  //formula
+escreval ("O valor em fahrenheit é:",far)
+fimalgoritmo 
 Observação: Para testar se a sua resposta está correta saiba que 100oC = 212F
+
 13) Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno.
 Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média
 final é:
