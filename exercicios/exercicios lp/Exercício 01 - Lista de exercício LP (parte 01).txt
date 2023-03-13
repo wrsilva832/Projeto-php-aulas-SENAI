@@ -272,6 +272,7 @@ efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, 
 vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do
 vendedor.
 R)
+algoritmo "semnome"
 var
 qtdVenda,bonus,valorVenda,salariofuncionario,salarioFinal: real
 inicio
@@ -283,7 +284,7 @@ salariofuncionario <- 1000
 valorVenda <-  qtdVenda * valorVenda
 bonus <- (valorVenda * 5)/100
 salarioFinal <- salariofuncionario + bonus
-  escreval("A quntidade de venda foi: ", qtdVenda)
+  escreval("A quantidade de venda foi: ", qtdVenda)
   escreval("Seu salario final foi: R$ ", salarioFinal)
 fimalgoritmo
 
@@ -380,6 +381,7 @@ fimalgoritmo
 16) As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
 compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
 escreva o custo total da compra.
+R)
 
 
 
