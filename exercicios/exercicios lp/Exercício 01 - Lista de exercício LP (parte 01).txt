@@ -235,12 +235,13 @@ Calcular e escrever o valor do novo salário.
 R)
 algoritmo "semnome"
 var
-   salario: real
-   novo_sal: real
+   salario,novo_sal,aumento: real
 inicio
  escreva("Digite o Salário do funcionário R$: ")
  leia(salario)
-novo_sal <- (salario * 0.15) + salario
+ escreva("Digite o aumento do funcionário R$: ")
+ leia(aumento)
+novo_sal <- (salario * aumento)/100 + salario
  escreva("O novo Salário do funcionário é de R$: ", novo_sal)
 fimalgoritmo
 
