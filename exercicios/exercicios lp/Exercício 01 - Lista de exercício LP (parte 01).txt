@@ -428,6 +428,30 @@ senao
 fimse
 fimalgoritmo
 
+19) Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.
+R)
+algoritmo "semnome"
+var
+N1,N2,maior: real
+inicio
+escreval("Digite um numero1: ")
+leia(N1)
+escreval("Digite um numero2: ")
+leia(N2)
+se (N1 > N2) entao
+   maior <- N1
+senao
+   se (N2 > N1) entao
+      maior <- N2
+   senao
+      se (N1 = N2) ou (N2 = N1) entao
+         escreval("Valores iguais! ")
+      fimse
+   fimse
+fimse
+escreval("O maior valor foi ", maior)
+fimalgoritmo
+
 24) Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
 ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que
 ultrapassar este valor, calcular e escrever o seu salário total.
