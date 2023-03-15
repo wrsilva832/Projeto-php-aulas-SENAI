@@ -401,6 +401,33 @@ fimse
  escreval("O custo total é de: ", custo:5:2)
 fimalgoritmo
 
+17) Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever
+uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o
+aluno é aprovado). Escrever também a média calculada.
+R)
+algoritmo "CalculoMediaAluno"
+var
+nota1, nota2,,media: real
+inicio
+escreval(" digite a primeira nota: ")
+leia(nota1)
+escreval(" digite a segunda nota: ")
+leia(nota2)
+media <- (nota1)+(nota2)/2
+escreval(" a media é: ", media)
+se media >= 6 entao
+   escreval(" Voce está Aprovado ")
+senao
+   se media <5 entao
+      escreva(" Voce está reprovado ")
+   senao
+      se media =5 entao
+         escreva(" Voce está de recuperação ")
+      fimse
+   fimse
+fimse
+fimalgoritmo
+
 
 
 
