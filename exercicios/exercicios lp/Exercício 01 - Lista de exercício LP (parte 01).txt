@@ -385,7 +385,21 @@ fimalgoritmo
 compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
 escreva o custo total da compra.
 R)
-
+algoritmo "semnome"
+var
+macas,custo: real
+inicio
+escreval("Numero de maçãs compradas: ")
+leia(macas)
+se (macas < 12) entao
+   custo <- macas * 1.30
+senao
+   se (macas > 12) entao
+      custo <- macas * 1.00
+   fimse
+fimse
+ escreval("O custo total é de: ", custo:5:2)
+fimalgoritmo
 
 
 
