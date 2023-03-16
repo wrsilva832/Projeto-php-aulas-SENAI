@@ -1,0 +1,129 @@
+14) Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso
+contrário escrever NÃO É MAIOR QUE 10!
+R)
+algoritmo "semnome"
+var
+ valor:inteiro
+inicio
+escreval("-----------------")
+escreval("   Maior que 10  ")
+escreval("-----------------")
+escreval("Digite um valor: ")
+leia(valor)
+se valor > 10 entao
+ escreval(" É maior que 10 ")
+ senao
+ escreval(" Não é maior que 10 ")
+fimse
+fimalgoritmo
+
+15) Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo).
+R)
+algoritmo "semnome"
+var
+  valor: inteiro
+inicio
+  escreval("-----------------")
+  escreval("Positivo Negativo")
+  escreval("-----------------")
+  escreval("Digite um valor: ")
+  leia(valor)
+    se (valor % 2) = 0 entao
+     escreval(" Valor Positivo! ")
+    senao
+     escreval("Valor Negativo! ")
+    fimse
+fimalgoritmo
+
+16) As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+escreva o custo total da compra.
+R)
+algoritmo "semnome"
+var
+macas,custo: real
+inicio
+escreval("Numero de maçãs compradas: ")
+leia(macas)
+se (macas < 12) entao
+   custo <- macas * 1.30
+senao
+   se (macas > 12) entao
+      custo <- macas * 1.00
+   fimse
+fimse
+ escreval("O custo total é de: ", custo:5:2)
+fimalgoritmo
+
+17) Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever
+uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o
+aluno é aprovado). Escrever também a média calculada.
+R)
+algoritmo "CalculoMediaAluno"
+var
+nota1, nota2,,media: real
+inicio
+escreval(" digite a primeira nota: ")
+leia(nota1)
+escreval(" digite a segunda nota: ")
+leia(nota2)
+media <- (nota1)+(nota2)/2
+escreval(" a media é: ", media)
+se media >= 6 entao
+   escreval(" Voce está Aprovado ")
+senao
+   se media <5 entao
+      escreva(" Voce está reprovado ")
+   senao
+      se media =5 entao
+         escreva(" Voce está de recuperação ")
+      fimse
+   fimse
+fimse
+fimalgoritmo
+
+19) Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.
+R)
+algoritmo "semnome"
+var
+N1,N2,maior: real
+inicio
+escreval("Digite um numero1: ")
+leia(N1)
+escreval("Digite um numero2: ")
+leia(N2)
+se (N1 > N2) entao
+   maior <- N1
+senao
+   se (N2 > N1) entao
+      maior <- N2
+   senao
+      se (N1 = N2) ou (N2 = N1) entao
+         escreval("Valores iguais! ")
+      fimse
+   fimse
+fimse
+escreval("O maior valor foi ", maior)
+fimalgoritmo
+
+24) Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
+ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que
+ultrapassar este valor, calcular e escrever o seu salário total.
+R)
+algoritmo "semnome"
+var
+salarioFixo,valorVendas,comissao,totalComissao,total: real
+inicio
+comissao <- 0.03
+escreval("Digite o salario fixo: ")
+leia(salarioFixo)
+escreval("Digite o valor das vendas: ")
+leia(valorVendas)
+se (valorVendas <= 1500) entao
+   totalComissao <- comissao * valorVendas
+senao
+      totalComissao <- (0.03*1500)  + (valorVendas - 1500) * 0.05
+   fimse
+total <- salarioFixo + totalComissao
+escreval("O salario total foi de: ", total)
+fimalgoritmo
