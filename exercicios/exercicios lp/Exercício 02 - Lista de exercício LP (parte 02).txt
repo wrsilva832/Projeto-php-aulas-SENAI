@@ -127,3 +127,22 @@ senao
 total <- salarioFixo + totalComissao
 escreval("O salario total foi de: ", total)
 fimalgoritmo
+
+27) Ler um valor e escrever se é positivo, negativo ou zero.
+R)
+algoritmo "semnome"
+var
+N: inteiro
+inicio
+escreval("Digite um numero: ")
+leia(N)
+se (N < 0) entao
+   escreval("Negativo")
+senao
+      se (N > 0) entao
+         escreval("Positivo")
+      senao
+         escreval("Número nulo")
+      fimse
+   fimse
+fimalgoritmo
