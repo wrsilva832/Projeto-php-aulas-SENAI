@@ -4,15 +4,15 @@ da divisão do primeiro valor lido pelo segundo valor lido. (utilizar a estrutur
 R)
 algoritmo "semnome"
 var
-valor1,valor2: inteiro
+n1,n2: real
 inicio
-escreval("Digite o primeiro valor: ")
-leia(valor1)
-valor2 <- 0
+escreval("Digite o primeiro numero")
+leia(n1)
 repita
-   escreval("Entre com o outro valor")
-   leia(valor2)
-ate valor2 >0
+   escreval("Digite o segundo numero")
+   leia(n2)
+ate (n2 <> 0)
+escreval("O resultado da divisao ", n1/n2)
 fimalgoritmo
 
 45) Reescreva o exercício anterior utilizando a estrutura ENQUANTO.
