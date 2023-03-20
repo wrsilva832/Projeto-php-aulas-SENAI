@@ -35,6 +35,18 @@ fimalgoritmo
 46) Acrescentar uma mensagem de 'VALOR INVÁLIDO' no exercício [44] caso o segundo valor
 informado seja ZERO.
 R)
+algoritmo "semnome"
+var
+valor1,valor2: inteiro
+inicio
+escreval("Digite o primeiro valor: ")
+leia(valor1)
+escreval("Digite o segundo valor: ")
+leia(valor2)
+se (valor2 = 0) entao
+   escreval("Valor inválido")
+fimse
+fimalgoritmo
 
 
 48) Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a
