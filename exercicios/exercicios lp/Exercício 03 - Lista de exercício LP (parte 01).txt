@@ -53,7 +53,20 @@ fimalgoritmo
 média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada
 nota.
 R)
-
+algoritmo "semnome"
+var
+ cont,n, media: real
+inicio
+cont <- 2
+media <- 0
+enquanto (cont <=2) faca
+   escreval("Digite uma nota: ")
+   leia(n)
+   media <- (n + n) / 2
+   cont <- cont + 1
+   escreval("A média das notas foi: ", media)
+   fimenquanto
+fimalgoritmo
 
 49) Acrescente uma mensagem 'NOVO CÁLCULO (S/N)?' ao final do exercício [48]. Se for
 respondido 'S' deve retornar e executar um novo cálculo, caso contrário deverá encerrar o algoritmo
