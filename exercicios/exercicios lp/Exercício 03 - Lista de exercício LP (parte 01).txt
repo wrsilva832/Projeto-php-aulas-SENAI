@@ -110,3 +110,16 @@ para i <- 10 ate 1 passo -1 faca
 Escreval(i)
 fimpara
 fimalgoritmo
+
+52) Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100.
+R)
+algoritmo "semnome"
+var
+i:inteiro
+inicio
+para i <- 100 ate 110 faca
+Escreval(i)
+fimpara
+fimalgoritmo
+
+
