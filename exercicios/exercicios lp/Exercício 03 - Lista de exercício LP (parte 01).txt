@@ -86,3 +86,27 @@ repita
 ate (resp = "N")
 escreval("A média das notas e: ", media)
 fimalgoritmo
+
+50) Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem
+crescente.
+R)
+algoritmo "semnome"
+var
+i:inteiro
+inicio
+para i <- 1 ate 10 faca
+Escreval(i)
+fimpara
+fimalgoritmo
+
+51) Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem
+decrescente.
+R)
+algoritmo "semnome"
+var
+i:inteiro
+inicio
+para i <- 10 ate 1 passo -1 faca
+Escreval(i)
+fimpara
+fimalgoritmo
