@@ -1,0 +1,50 @@
+78) Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armaze os nomes lidos em
+um vetor. Após isto, o algoritmo deve permitir a leitura de mais 1 nome qualquer de pessoa e depois
+escrever a mensagem ACHEI, se o nome estiver entre os 10 nomes lidos anteriormente (guardados no
+vetor), ou NÃO ACHEI caso contrário.
+R)
+algoritmo "semnome"
+var
+nomes: vetor[1..2] de caractere
+nome: caractere
+i: inteiro
+achei: logico
+
+inicio
+para i de 1 ate 2 faca
+   escreval("Digite o ", i, "º nome ")
+   leia(nomes[i])
+fimpara
+escreval("Agora digite o nome a ser buscado: ")
+leia(nome)
+achei <- falso
+para i de 1 ate 2 faca
+   se (nomes[i] = nome) entao
+      achei <- verdadeiro
+   fimse
+fimpara
+se (achei = verdadeiro) entao
+   escreval("ACHEI")
+senao
+   escreval("NÂO ACHEI")
+fimse
+fimalgoritmo
+
+79) Escreva um algoritmo que permita a leitura das notas de uma turma de 20 alunos. Calcular a média
+da turma e contar quantos alunos obtiveram nota acima desta média calculada. Escrever a média da
+turma e o resultado da contagem.
+R)
+
+
+80) Ler um vetor Q de 20 posições (aceitar somente números positivos). Escrever a seguir o valor do
+maior elemento de Q e a respectiva posição que ele ocupa no vetor.
+R)
+
+
+81) O mesmo exercício anterior, mas agora deve escrever o menor elemento do vetor e a respectiva
+posição dele nesse vetor.
+R)
+
+
+
+
