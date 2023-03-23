@@ -36,17 +36,17 @@ turma e o resultado da contagem.
 R)
 algoritmo "semnome"
 var
-nome: vetor[1..2] de caractere
-n1: vetor[1..2] de real
-n2: vetor[1..2] de real
-m: vetor[1..2] de real
+nome: vetor[1..20] de caractere
+n1: vetor[1..20] de real
+n2: vetor[1..20] de real
+m: vetor[1..20] de real
 i: inteiro
 cont: real
 inicio
 escreval("----------------------")
 escreval("APROVADOS E REPROVADOS")
 escreval("----------------------")
-para i <- 1 ate 2 faca
+para i <- 1 ate 20 faca
    escreval("ALUNO ",i)
    escreva("NOME: ")
    leia(nome[i])
@@ -59,7 +59,7 @@ fimpara
 limpatela
 escreval("--------ALUNOS--------")
 escreval("----------------------")
-para i <- 1 ate 2 faca
+para i <- 1 ate 20 faca
    escreval(" Aluno: ", nome[i], " Média: ", m[i])
    se   (m[i]>5) entao
       cont <- cont + 1
