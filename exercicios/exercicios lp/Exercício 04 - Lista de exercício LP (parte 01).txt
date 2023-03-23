@@ -36,28 +36,37 @@ turma e o resultado da contagem.
 R)
 algoritmo "semnome"
 var
-nome: vetor[1..20] de caractere
-n1: vetor[1..20] de real
-n2: vetor[1..20] de real
-m: vetor[1..20] de real
+nome: vetor[1..2] de caractere
+n1: vetor[1..2] de real
+n2: vetor[1..2] de real
+m: vetor[1..2] de real
 i: inteiro
+cont: real
 inicio
-para i <- 1 ate 20 faca
-   escreval("Aluno ", i)
-   escreva("Nome: ")
+escreval("----------------------")
+escreval("APROVADOS E REPROVADOS")
+escreval("----------------------")
+para i <- 1 ate 2 faca
+   escreval("ALUNO ",i)
+   escreva("NOME: ")
    leia(nome[i])
-   escreva("Primeira nota: ")
+   escreva("Digite a primeira nota: ")
    leia(n1[i])
-   escreva("Segunda nota: ")
+   escreva("Digite a segunda nota: ")
    leia(n2[i])
-   m[i] <-  (n1[i] +n2[i])/2
+   m[i] <- (n1[i] + n2[i])/2
 fimpara
 limpatela
-escreval("Listagem de Alunos")
-para i <- 1 ate 20 faca
-   escreval("Aluno: ",nome[i]:15," Média ", m[i])
+escreval("--------ALUNOS--------")
+escreval("----------------------")
+para i <- 1 ate 2 faca
+   escreval(" Aluno: ", nome[i], " Média: ", m[i])
+   se   (m[i]>5) entao
+      cont <- cont + 1
+   fimse
 fimpara
-
+escreval(cont, " Alunos Aprovados na Média. ")
+fimalgoritmo
 
 
 80) Ler um vetor Q de 20 posições (aceitar somente números positivos). Escrever a seguir o valor do
