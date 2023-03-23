@@ -34,6 +34,30 @@ fimalgoritmo
 da turma e contar quantos alunos obtiveram nota acima desta média calculada. Escrever a média da
 turma e o resultado da contagem.
 R)
+algoritmo "semnome"
+var
+nome: vetor[1..20] de caractere
+n1: vetor[1..20] de real
+n2: vetor[1..20] de real
+m: vetor[1..20] de real
+i: inteiro
+inicio
+para i <- 1 ate 20 faca
+   escreval("Aluno ", i)
+   escreva("Nome: ")
+   leia(nome[i])
+   escreva("Primeira nota: ")
+   leia(n1[i])
+   escreva("Segunda nota: ")
+   leia(n2[i])
+   m[i] <-  (n1[i] +n2[i])/2
+fimpara
+limpatela
+escreval("Listagem de Alunos")
+para i <- 1 ate 20 faca
+   escreval("Aluno: ",nome[i]:15," Média ", m[i])
+fimpara
+
 
 
 80) Ler um vetor Q de 20 posições (aceitar somente números positivos). Escrever a seguir o valor do
