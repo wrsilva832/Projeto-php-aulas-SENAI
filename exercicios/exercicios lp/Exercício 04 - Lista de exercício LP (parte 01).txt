@@ -74,10 +74,17 @@ maior elemento de Q e a respectiva posição que ele ocupa no vetor.
 R)
 
 
+
+
 81) O mesmo exercício anterior, mas agora deve escrever o menor elemento do vetor e a respectiva
 posição dele nesse vetor.
 R)
 
+
+
+
+81) O mesmo exercício anterior, mas agora deve escrever o menor elemento do vetor e a respectiva
+posição dele nesse vetor.
 
 
 
