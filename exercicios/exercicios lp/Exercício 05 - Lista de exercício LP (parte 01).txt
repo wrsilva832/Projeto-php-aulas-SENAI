@@ -1,0 +1,174 @@
+EXEMPLOS PROCEDIMENTOS
+
+// Detector de pesado
+algoritmo "semnome"
+var
+I : inteiro
+N, pesado: caractere
+P, Mai: real
+procedimento Topo()
+inicio
+Limpatela
+escreval("---------------------------------")
+escreval("-------DETECTOR DE PESADO--------")
+escreval("Maior Peso ate agora: ", Mai, "Kg")
+escreval("---------------------------------")
+fimprocedimento
+inicio
+limpatela
+Topo() //chama o procedimento
+Para I <- 1 ate 5 faca
+   escreval("Digite o nome: ")
+   leia(N)
+   escreval("Digite o peso de ", N, ": ")
+   leia(P)
+   se (P>Mai) entao
+      Mai <- P
+      Pesado <- N
+   fimse
+   limpatela
+Topo() //chama o procedimento
+fimpara
+limpatela
+Topo()
+escreval("A pessoa mais pesada foi ", Pesado, ", com ", Mai, " quilos. ")
+fimalgoritmo
+
+// Procedimento Soma
+
+algoritmo "semnome"
+var
+x,y : inteiro
+procedimento Soma(a, b: inteiro)
+inicio
+escreval("Recebi o valor ",a)
+escreval("Recebi o valor ",b)
+escreval("A soma entre os dois é ", a + b)
+fimprocedimento
+inicio
+x <- 5
+y <- 3
+Soma(x,y)
+fimalgoritmo
+
+// Par ou Impar
+algoritmo "semnome"
+var
+n: inteiro
+// inicio procedimento
+procedimento ParouImpar(v: inteiro)
+inicio
+se (v%2=0) entao
+   escreval("O numero ", v , " e PAR")
+senao
+   escreval("O numero ", v , " e IMPAR")
+fimse
+fimprocedimento
+// fim procedimento
+inicio
+escreval("Digite um numero: ")
+leia(n)
+ParouImpar(n)
+fimalgoritmo
+
+// escopo global e local
+algoritmo "semnome"
+var
+n: inteiro
+// inicio procedimento
+procedimento ParouImpar(v: inteiro)
+inicio
+
+se (v%2=0) entao
+   escreval("O numero ", v , " e PAR")
+senao
+   escreval("O numero ", v , " e IMPAR")
+fimse
+fimprocedimento
+// fim procedimento
+inicio
+escreval("Digite um numero: ")
+leia(n)
+ParouImpar(n)
+escreval("O valor de V é ", v)// nao sera executado pois o escopo é local
+escreval("O valor de N é ", n)
+fimalgoritmo
+
+
+// Soma Parametros Referencia
+lgoritmo "semnome"
+var
+x, y :inteiro
+procedimento Soma(var A,B: inteiro)
+inicio
+a <- a + 1
+b <- b + 2
+ escreval("Valor de A = ", A)
+ escreval("Valor de B = ", B)
+ escreval("Soma A + B = ", A+B)
+fimprocedimento
+inicio
+x <- 4
+y <- 8
+soma (x,y)
+ escreval("Valor de x = ", x)
+ escreval("Valor de y = ", y)
+fimalgoritmo
+
+// ProximoFibonacci
+algoritmo "semnome"
+var
+c, t1,t2,t3 : inteiro
+procedimento ProximoFibonacci(var a, b: inteiro)
+var c : inteiro
+inicio
+c := a + b
+escreva(c)
+a := b
+b := c
+fimprocedimento
+inicio
+t1 <- 0
+escreva(t1)
+t2 <- 1
+escreva(t2)
+para c := 3 ate 10 faca
+   ProximoFibonacci(t1, t2)
+fimpara
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EXEMPLOS FUNÇÕES
