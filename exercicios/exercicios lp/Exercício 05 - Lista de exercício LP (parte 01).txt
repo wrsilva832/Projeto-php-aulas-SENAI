@@ -138,37 +138,87 @@ fimpara
 fimalgoritmo
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 EXEMPLOS FUNÇÕES
+// Soma
+algoritmo "semnome"
+var
+v1,v2,s: inteiro
+funcao soma(x,y: inteiro): inteiro
+inicio
+retorne (x + y)
+fimfuncao
+inicio
+escreva("Digite o primeiro valor: ")
+leia(v1)
+  escreva("Digite o segundo valor: ")
+  leia(v2)
+s <- soma(v1,v2)
+escreval("A soma entre ", v1, " e ", v2, " é igual a ", s)
+fimalgoritmo
+
+// Par ou Impar
+algoritmo "semnome"
+var
+n: inteiro
+r: caractere
+funcao ParOuImpar(v: inteiro): caractere
+inicio
+se (v%2=0) entao
+   retorne "PAR"
+senao
+   retorne "IMPAR"
+fimse
+fimfuncao
+inicio
+escreva("Digite um numero: ")
+leia(n)
+r <- ParOuImpar(n)
+escreva("O numero ", n, " e um valor ", r)
+fimalgoritmo
+
+// Fatorial
+algoritmo "semnome"
+var
+n, f: inteiro
+funcao fatorial(v: inteiro): inteiro
+var c,r : inteiro
+inicio
+para c <- 1 ate v faca
+   r <- r*c
+fimpara
+retorne r
+fimfuncao
+inicio
+escreva("Digite um numero: ")
+leia(n)
+f <- fatorial(n)
+escreval("O valor de ", n, "! e igual a ", f)
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
