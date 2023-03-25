@@ -223,6 +223,7 @@ fimalgoritmo
 algoritmo "semnome"
 var
 n: caractere
+c: inteiro
 inicio
 escreva("Digite seu nome: ")
 leia(n)
@@ -232,7 +233,13 @@ escreval("Seu nome em maiuscula e ", minusc(n))
 escreval("A primeira letra do seu nome e ", copia(n, 1, 2))
 escreval("A ultima letra do seu nome e ", copia(maiusc(n), compr(n), 1))
 escreval("Seu nome tem a letra A na posicao ", Pos("A", n))
+escreval("O codigo da letra A e ", asc("A"))
+escreval("A letra de codigo 65 e ", carac(65))
+para c <- compr(n) ate 1 passo -1 faca
+escreva(copia(maiusc(n),c,1)
+fimpara
 fimalgoritmo
+
 
 
 
