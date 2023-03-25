@@ -219,6 +219,20 @@ para i <- 3 ate 10 faca
 fimpara
 fimalgoritmo
 
+// Strings no visualg
+algoritmo "semnome"
+var
+n: caractere
+inicio
+escreva("Digite seu nome: ")
+leia(n)
+escreval("Total de letras do seu nome: ", compr(n))
+escreval("Seu nome em maiuscula e ", maiusc(n))
+escreval("Seu nome em maiuscula e ", minusc(n))
+escreval("A primeira letra do seu nome e ", copia(n, 1, 2))
+escreval("A ultima letra do seu nome e ", copia(maiusc(n), compr(n), 1))
+escreval("Seu nome tem a letra A na posicao ", Pos("A", n))
+fimalgoritmo
 
 
 
